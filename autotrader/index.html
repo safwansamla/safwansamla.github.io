@@ -23,7 +23,6 @@
   <meta property="og:image" content="https://test.autotrader.com/wp-content/uploads/2020/02/1988-BMW-M3-Coupe-1.jpg"/>
   <meta name="author" content="Doug Demuro">
 
-  <script defer src="https://unpkg.com/web-vitals@0.2.4/dist/web-vitals.es5.umd.min.js"></script>
   <!-- This site is optimized with the Yoast SEO Premium plugin v13.2 - https://yoast.com/wordpress/plugins/seo/ -->
   <meta name="description" content="Looking for a fun 1980s car? Look no further."/>
   <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
@@ -61,6 +60,13 @@
         content="https://test.autotrader.com/wp-content/uploads/2020/02/1988-BMW-M3-Coupe-1.jpg"/>
   <meta property="og:image:width" content="600"/>
   <meta property="og:image:height" content="400"/>
+  <script type="module">
+  import {getCLS, getFID, getLCP} from 'https://unpkg.com/web-vitals@0.2.4/dist/web-vitals.es5.min.js?module';
+
+  getCLS(console.log);
+  getFID(console.log);
+  getLCP(console.log);
+</script>
   <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
     "@context": "https://schema.org",
     "@graph": [
@@ -620,14 +626,6 @@
 
 <body class="post-template-default single single-post postid-225515 single-format-standard td-standard-pack"
       itemscope="itemscope" itemtype="https://schema.org/WebPage">
-  <script>
-    addEventListener('DOMContentLoaded', function () {
-      console.log("DOMContentLoaded Fired");
-      webVitals.getCLS(console.log);
-      webVitals.getFID(console.log);
-      webVitals.getLCP(console.log);
-    });
-  </script>
 
 
 <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
@@ -1955,5 +1953,6 @@
     }
   }, false);</script>
   <script data-no-minify="1" async src="lazyload.min.js"></script>
+
 </body>
 </html>
